@@ -1,0 +1,84 @@
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 5px;
+    }
+
+    .form-container {
+        flex: 1;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .message-container {
+        flex: 1;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        white-space: nowrap; /* Evitar saltos de línea automáticos */
+    }
+
+    .message-text {
+        margin-bottom: 10px;
+    }
+</style>
+
+
+<div class="container">
+    <div class="form-container">
+        <form asp-controller="Calculadora" asp-action="Calcular" method="post">
+            <label for="Apellidos">Apellidos:</label>
+            <input type="text" name="Apellidos" /><br />
+
+            <br /><label for="Nombres">Nombres:</label>
+            <input type="text" name="Nombres" /><br />
+
+            <br /><label for="Edad">Edad:</label>
+            <input type="text" name="Edad" /><br/>
+
+            <br /><label>Genero:</label><br />
+            <input type="radio" name="Genero" value="MASCULINO" id="genero-masculino">
+            <label for="genero-masculino">Masculino</label><br />
+            <input type="radio" name="Genero" value="FEMENINO" id="genero-femenino">
+            <label for="genero-femenino">Femenino</label><br />
+
+            <br /><label for="Club">Club:</label>
+            <select name="Club">
+                <option value="Universitario">Universitario de Deportes</option>
+                <option value="Alianza">Alianza Lima</option>
+                <option value="Cristal">Sporting Cristal</option>
+                <option value="Cienciano">Club Cienciano</option>
+            </select><br />
+
+            <br /><label for="Categoria">Categoria:</label>
+            <select name="Categoria">
+                <option value="Sub 17">Sub 17</option>
+                <option value="Sub 20">Sub 20</option>
+                <option value="Mayores">Mayores</option>
+            </select><br />
+
+
+            <br /><label>Temporadas (marcar al menos una):</label><br />
+            <input type="checkbox" name="Temporada1" value="true">
+            <label for="Temporada1">Temporada 1</label><br />
+            <input type="checkbox" name="Temporada2" value="true">
+            <label for="Temporada2">Temporada 2</label><br />
+            <input type="checkbox" name="Temporada3" value="true">
+            <label for="Temporada3">Temporada 3</label><br />
+            <input type="checkbox" name="Temporada4" value="true">
+            <label for="Temporada4">Temporada 4</label><br />
+
+            <br /><input type="submit" value="Calcular" />
+        </form>
+    </div>
+    <div class="message-container">
+        <h3 class="message-text">@Html.Raw(ViewData["Message"])</h3>
+    </div>
+</div>
