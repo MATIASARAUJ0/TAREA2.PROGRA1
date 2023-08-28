@@ -43,10 +43,10 @@ namespace appcomics.Controllers
             costoTot = costo*1.19;
 
             if(nombramiento == "-"){
-                ViewData["Message"] = "Por favor completa tus datos.";
+                ViewData["Message"] = "Por favor, completa tus datos";
                 return View("Index");
             }if(edad <= 0){
-                ViewData["Message"] = "Por favor completa tus datos correctamente.";
+                ViewData["Message"] = "Por favor, completa tus datos correctamente";
                 return View("Index");
             }else{
                 ViewData["Message"] = $"{nombramiento}<br/>Edad: {edad}<br>Nombre Completo: {nombre}<br>Categoria: {categoria}<br>Genero: {genero}<br>Club: {club}<br><br>COSTOS:<br>Costo Subtotal: {costo}<br>Impuesto (19%): {costoTot-costo}<br>Costo Total: {costoTot}";
