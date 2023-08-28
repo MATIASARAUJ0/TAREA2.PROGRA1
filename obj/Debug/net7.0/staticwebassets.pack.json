@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\appcomics.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\MATIAS\\Documents\\PROGRAMACION I PROYECTOS\\Tarea2\\wwwroot\\.gitignore",
+      "PackagePath": "staticwebassets\\.gitignore"
+    },
+    {
       "Id": "C:\\Users\\MATIAS\\Documents\\PROGRAMACION I PROYECTOS\\Tarea2\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

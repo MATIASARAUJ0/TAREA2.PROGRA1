@@ -39,7 +39,7 @@ namespace appcomics.Controllers
             club = objOperacion.DefClub();
 
 
-            costo = temporadas*1200;
+            costo = temporadas*600;
             costoTot = costo*1.19;
 
             if(nombramiento == "-"){

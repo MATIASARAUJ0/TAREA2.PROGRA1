@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XQVzJVaRd5C1gd9msb46iUWA6oue0JeUbEJleYI4izk=",
+  "Hash": "gIiLVnDt7Uoa/f8HJSUUiZamGrxMo3vLTL1TLfriQes=",
   "Source": "appcomics",
   "BasePath": "_content/appcomics",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\MATIAS\\Documents\\PROGRAMACION I PROYECTOS\\Tarea2\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\appcomics.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\MATIAS\\Documents\\PROGRAMACION I PROYECTOS\\Tarea2\\wwwroot\\.gitignore",
+      "SourceId": "appcomics",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MATIAS\\Documents\\PROGRAMACION I PROYECTOS\\Tarea2\\wwwroot\\",
+      "BasePath": "_content/appcomics",
+      "RelativePath": ".gitignore",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\.gitignore"
     },
     {
       "Identity": "C:\\Users\\MATIAS\\Documents\\PROGRAMACION I PROYECTOS\\Tarea2\\wwwroot\\css\\site.css",
