@@ -48,6 +48,9 @@ namespace appcomics.Controllers
             }if(edad <= 0){
                 ViewData["Message"] = "Por favor, completa tus datos correctamente";
                 return View("Index");
+            }if(temporadas == 0){
+                ViewData["Message"] = "Por favor, selecciona temporadas";
+                return View("Index");
             }else{
                 ViewData["Message"] = $"{nombramiento}<br/>Edad: {edad}<br>Nombre Completo: {nombre}<br>Categoria: {categoria}<br>Genero: {genero}<br>Club: {club}<br><br>COSTOS:<br>Costo Subtotal: {costo}<br>Impuesto (19%): {costoTot-costo}<br>Costo Total: {costoTot}";
                 return View("Index");
